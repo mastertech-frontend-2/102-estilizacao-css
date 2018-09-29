@@ -1,0 +1,71 @@
+/* Isso é um comentário em CSS */
+
+body {
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+header, footer {
+    background-color: #3b5998;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 22pt;
+}
+
+img {
+    background-color: white;
+    width: 30px;
+}
+
+main {
+    background-color: #d4d4d4;
+    width: fit-content;
+
+    border-radius: 5px;
+    margin: auto;
+}
+
+p {
+    color: green;
+}
+
+#paragrafo-vermelho {
+    color: red;
+}
+
+.paragrafo {
+    color: black;
+}
+
+/* Os parâmetros desse seletor não funcionam porque ele é menos importante que o seletor abaixo. */
+.estilizado span {
+    font-style: normal;
+    background-color: red;
+}
+
+/* Os parâmetros desse seletor sobrescrevem os parâmetros acima porque ele é mais importante que o seletor acima. */
+.paragrafo.estilizado span {
+    background-color: blue;
+
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.bola {
+    border: 1px solid black;
+    border-radius: 100px;
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+}
+
+.texto-do-footer {
+    width: 100%;
+    text-align: center;
+}
